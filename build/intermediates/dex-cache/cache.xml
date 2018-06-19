@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Qaisar\Desktop\FYPWifiDirectPractice\WonderCom-master1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="C:\Users\Qaisar\Desktop\FYPWifiDirectPractice\WonderCom-master1\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-19.1.0_708bd7c12d6bdc23c77eb8918d7b10121107ecc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Qaisar\Desktop\FYPWifiDirectPractice\WonderCom-master1\app\libs\commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="C:\Users\Qaisar\Desktop\FYPWifiDirectPractice\WonderCom-master1\app\build\intermediates\pre-dexed\debug\commons-io-2.4_e1b3a168c1714a8825656cc63349ace3c0112556.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Qaisar\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Qaisar\Desktop\FYPWifiDirectPractice\WonderCom-master1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_c1beb7c4966bdc294c9e25f96e77e7e2c5af0ac6.jar" />
+    </item>
+
+</items>

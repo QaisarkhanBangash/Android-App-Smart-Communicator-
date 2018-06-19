@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu May 17 16:38:49 PKT 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\assets\\debug
+0.path=wpa_supplicant
+0.set=ASSET
+count=1
