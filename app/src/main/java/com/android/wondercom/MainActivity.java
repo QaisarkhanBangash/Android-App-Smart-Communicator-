@@ -1,13 +1,16 @@
 package com.android.wondercom;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.net.wifi.p2p.WifiP2pManager.Channel;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NavUtils;
@@ -24,7 +27,6 @@ import android.widget.Toast;
 
 import com.android.wondercom.InitThreads.ClientInit;
 import com.android.wondercom.InitThreads.ServerInit;
-import com.android.wondercom.Main2Activity;
 import com.android.wondercom.Receivers.WifiDirectBroadcastReceiver;
 import com.android.wondercom.util.ActivityUtilities;
 
@@ -32,7 +34,8 @@ import com.android.wondercom.util.ActivityUtilities;
  * This activity is the launcher activity. 
  * Once the connection established, the ChatActivity is launched.
  */
-public class MainActivity extends Activity{
+public class MainActivity extends Activity
+{
 	public static final String TAG = "MainActivity";	
 	public static final String DEFAULT_CHAT_NAME = "";
 	private WifiP2pManager mManager;
@@ -66,10 +69,12 @@ public class MainActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//		if( getIntent().getBooleanExtra("Exit me", false)){
+//			finish();
+//		}
 
 
-
-		SharedPreferences.Editor editor = getSharedPreferences("f1", MODE_PRIVATE).edit();
+		Editor editor = getSharedPreferences("f1", MODE_PRIVATE).edit();
 		SharedPreferences prefs = getSharedPreferences("f1", MODE_PRIVATE);
 		String fc = prefs.getString("f","");
 		editor.putString("f", "");
@@ -81,7 +86,18 @@ public class MainActivity extends Activity{
 		editor.commit();
 
 		}
-		try {String ff = prefs.getString("f", "");
+		try {
+
+			getActionBar().setTitle("   Smart Communication");
+
+
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
+				getActionBar().setHomeAsUpIndicator(R.drawable.back);
+			}
+			getActionBar().setHomeButtonEnabled(true);
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+
+			String ff = prefs.getString("f", "");
 
 //			SharedPreferences prefs = getSharedPreferences("fisy", MODE_PRIVATE);
 //			String f = prefs.getString("f", null);
@@ -115,7 +131,7 @@ public class MainActivity extends Activity{
         goToSettings();
         
         //Go to Settings text
-        goToSettingsText = (TextView) findViewById(R.id.textGoToSettings);        
+        goToSettingsText = (TextView) findViewById(R.id.textGoToSettings);
         
         //Button Go to Chat
         goToChat = (Button) findViewById(R.id.goToChat);
@@ -129,6 +145,9 @@ public class MainActivity extends Activity{
         //Button Disconnect
         disconnect = (ImageView) findViewById(R.id.disconnect);
         disconnect();
+
+		getActionBar().setHomeAsUpIndicator(R.drawable.back);
+		getActionBar().setHomeButtonEnabled(true);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -229,12 +248,15 @@ public class MainActivity extends Activity{
 					
 					//Start the init process
 					if(mReceiver.isGroupeOwner() ==  WifiDirectBroadcastReceiver.IS_OWNER){
-						Toast.makeText(MainActivity.this, "I'm the group owner  " + mReceiver.getOwnerAddr().getHostAddress(), Toast.LENGTH_SHORT).show();
+						//I'm the group owner
+						//+ mReceiver.getOwnerAddr().getHostAddress()
+						Toast.makeText(MainActivity.this, " Connected " , Toast.LENGTH_SHORT).show();
 						server = new ServerInit();
 						server.start();
 					}
+					//I'm the client
 					else if(mReceiver.isGroupeOwner() ==  WifiDirectBroadcastReceiver.IS_CLIENT){
-						Toast.makeText(MainActivity.this, "I'm the client", Toast.LENGTH_SHORT).show();
+						Toast.makeText(MainActivity.this, " Connected.cc ", Toast.LENGTH_SHORT).show();
 						ClientInit client = new ClientInit(mReceiver.getOwnerAddr());
 						client.start();
 					}
@@ -289,4 +311,5 @@ public class MainActivity extends Activity{
   		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
   		return prefs.getString("chatName", DEFAULT_CHAT_NAME);
   	}
+
 }

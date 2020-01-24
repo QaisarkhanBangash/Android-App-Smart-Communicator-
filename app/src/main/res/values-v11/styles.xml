@@ -7,6 +7,7 @@
     -->
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!-- API 11 theme customizations can go here. -->
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
     </style>
 
     <style name="FullscreenTheme" parent="android:Theme.Holo">
@@ -18,7 +19,21 @@
     </style>
 
     <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
-        <item name="android:background">@color/black_overlay</item>
+        <item name="android:background">@color/white</item>
     </style>
+
+
+
+    <!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+        <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+        <!--<item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; Style to replace actionbar overflow icon. set item 'android:actionOverflowButtonStyle' in AppTheme &ndash;&gt;-->
+    <!--<style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">-->
+        <!--<item name="android:src">@drawable/d</item>-->
+    <!--</style>-->
+
 
 </resources>

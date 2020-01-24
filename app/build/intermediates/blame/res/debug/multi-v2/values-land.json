@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\res\\merged\\debug\\values-land\\values-land.xml",
+            "outputFile": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f54d83a66e5e90b4dd31cdaca144e6a2\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Aweso\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\ab81019080b7c384c8fe40dc26a97753\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,41 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d736a1f0bb86dd94e2be2f68d5c2b77\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\f54d83a66e5e90b4dd31cdaca144e6a2\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "232"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "328",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "505"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d736a1f0bb86dd94e2be2f68d5c2b77\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Aweso\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2d05d36a5ced140307c539266397c8b0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

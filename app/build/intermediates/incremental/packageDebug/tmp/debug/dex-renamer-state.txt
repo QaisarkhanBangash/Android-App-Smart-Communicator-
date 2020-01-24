@@ -1,4 +1,4 @@
-#Fri Jun 15 20:24:48 PKT 2018
-base.0=C\:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+#Mon Jan 13 07:45:04 PKT 2020
+base.0=C\:\\Users\\Aweso\\Desktop\\SmartComm\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -4,7 +4,7 @@
     <color name="app_background">#FFFFFF</color>
     <color name="app_text">#535391</color>
     
-    <color name="actionbar_background">#FFFFFF</color>
+    <color name="actionbar_background">#ffffff</color>
     <color name="actionbar_text">#535391</color>
     
     <color name="chat_text_background">#D6D9FF</color>
@@ -12,19 +12,21 @@
     <color name="chat_text">#535391</color>
     
     
-    <color name="button_background">#535391</color>
-    <color name="button_text">#FFFFFF</color>
+    <color name="button_background">#4db7d1</color>
+    <color name="button_text">#ffffff</color>
     
     <!-- Generic colors -->
     <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#ffffff</color>
     <color name="red">#F22613</color>
     <color name="purple">#8E44AD</color>
     <color name="yellow">#F4D03F</color>
     <color name="green">#26C281</color>
     <color name="blue">#22A7F0</color>
     <color name="gray">#DADFE1</color>
-    <color name="sc">#25accc</color>
+    <color name="sc">#4bb3cc</color>
+    <color name="st">#48a2b9</color>
+
 
     <color name="black_overlay">#66000000</color>
 

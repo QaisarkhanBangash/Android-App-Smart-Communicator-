@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee9e9"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    tools:context="com.android.wondercom.Settings">
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="42dp"
+                android:layout_height="37dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="190dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/seekBar3"
+                android:text="SET QUANTITY (Incoming Recent Messages)"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/ic_menu_info_details" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="188dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="66dp"
+                android:max="10"
+                android:progress="3" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.Space
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="42dp"
+                android:layout_height="37dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="188dp"
+                android:layout_height="39dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/seekBar4"
+                android:text="SET QUANTITY (Incoming Recent Calls)"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/ic_menu_info_details" />
+
+            <SeekBar
+                android:id="@+id/seekBar4"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="190dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:max="10"
+                android:progress="3" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.Space
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/sc"
+                android:text="SET"
+                android:textColor="@color/actionbar_background"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="190dp"
+                android:layout_height="34dp"
+                android:layout_alignStart="@+id/editText"
+                android:layout_centerVertical="true"
+                android:text="SET PASSCODE"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_menu_info_details" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="190dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="64dp"
+                android:ems="10"
+                android:hint="Enter Passcode"
+                android:inputType="textPassword"
+                android:textColor="@color/st"
+                android:textColorHint="@color/sc"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.Space
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="65dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/sc"
+                android:text="SET"
+                android:textColor="@color/actionbar_background"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="153dp"
+                android:layout_height="36dp"
+                android:layout_alignStart="@+id/editText1"
+                android:layout_centerVertical="true"
+                android:text="SET NUMBER"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_menu_info_details" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:ems="10"
+                android:hint="ENTER NUMBER"
+                android:inputType="textPersonName"
+                android:textColor="@color/st"
+                android:textColorHint="@color/sc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.Space
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="80dp"
+                android:layout_height="31dp"
+
+                android:background="@color/sc"
+                android:text="LOGOUT"
+                android:textColor="@color/actionbar_background"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:clickable="false" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/editText2"
+                android:ems="10"
+                android:hint="ENTER PASSCODE"
+                android:inputType="textPassword"
+                android:textColor="@color/st"
+                android:textColorHint="@color/sc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="61dp"
+                android:ems="10"
+                android:hint="ENTER NUMBER"
+                android:inputType="textPersonName"
+                android:textColor="@color/st"
+                android:textColorHint="@color/sc"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="13dp"
+                android:background="@color/sc"
+                android:text="LOGIN"
+                android:textColor="@color/actionbar_background"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:clickable="false" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="235dp"
+                android:layout_height="23dp"
+
+                android:layout_above="@+id/editText2"
+                android:layout_alignStart="@+id/editText3"
+                android:text="LOGIN / LOGOUT (OTHER MOBILE)"
+                android:textColor="@color/st"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_menu_info_details" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

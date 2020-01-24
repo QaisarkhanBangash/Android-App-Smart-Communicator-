@@ -5,17 +5,21 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class SmartControl extends Activity {
 
     ToggleButton t1,t2,t3,t4;
-
+    ImageView i1,i2,i3,i4,i5;
     String mm,fl1,wfi,rb;
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +35,55 @@ public class SmartControl extends Activity {
 
 
  try {
+     i1=(ImageView)findViewById(R.id.imageView2);
+     i2=(ImageView)findViewById(R.id.imageView3);
+     i3=(ImageView)findViewById(R.id.imageView4);
+     i4=(ImageView)findViewById(R.id.imageView5);
 
+     i1.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent i;
+             i=new Intent(SmartControl.this,InfooSC1.class);
+             startActivity(i);
+         }
+     });
+
+     i2.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent i;
+             i=new Intent(SmartControl.this,InfooSC2.class);
+             startActivity(i);
+         }
+     });
+
+
+     i3.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent i;
+             i=new Intent(SmartControl.this,InfooSC3.class);
+             startActivity(i);
+         }
+     });
+
+
+     i4.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             Intent i;
+             i=new Intent(SmartControl.this,InfooSC4.class);
+             startActivity(i);
+         }
+     });
+
+     getActionBar().setTitle("   Set Control Features");
+
+
+     getActionBar().setHomeAsUpIndicator(R.drawable.back);
+     getActionBar().setHomeButtonEnabled(true);
+     getActionBar().setDisplayHomeAsUpEnabled(true);
 //     SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
 //     SharedPreferences.Editor editor = x.edit();
 //     editor.putString("mobilemode", "elso");
@@ -57,23 +109,23 @@ public class SmartControl extends Activity {
   //   Toast.makeText(SmartControl.this, mm.toString(), Toast.LENGTH_SHORT).show();
      if (mm.equals("GENERAL")) {
          t1.setChecked(true);
-         Toast.makeText(SmartControl.this, "I M IN MM", Toast.LENGTH_SHORT).show();
+         Toast.makeText(SmartControl.this, "IN MOBILEMODE", Toast.LENGTH_SHORT).show();
      }
 
    //  Toast.makeText(SmartControl.this, fl1.toString(), Toast.LENGTH_SHORT).show();
      if (fl1.equals("FLASHLIGHTON")) {
          t2.setChecked(true);
-         Toast.makeText(SmartControl.this, "I M IN FLSHLIGHT", Toast.LENGTH_SHORT).show();
+         Toast.makeText(SmartControl.this, "IN FLSHLIGHT", Toast.LENGTH_SHORT).show();
      }
 
      if (wfi.equals("WIFION")) {
          t3.setChecked(true);
-         Toast.makeText(SmartControl.this, "I M IN WIFION" , Toast.LENGTH_SHORT).show();
+         Toast.makeText(SmartControl.this, "IN WIFI" , Toast.LENGTH_SHORT).show();
      }
 
-     if (rb.equals("RABON")) {
+     if (rb.equals("RAPON")) {
          t4.setChecked(true);
-         Toast.makeText(SmartControl.this, "I M IN RABOn", Toast.LENGTH_SHORT).show();
+         Toast.makeText(SmartControl.this, "IN RAP", Toast.LENGTH_SHORT).show();
      }
 
 
@@ -97,7 +149,7 @@ public class SmartControl extends Activity {
                      startActivity(intent);
                  }
 
-                 Toast.makeText(SmartControl.this, "t1 is Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "MobileMode toggle button is checked", Toast.LENGTH_SHORT).show();
 
                  SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
                  SharedPreferences.Editor editor = x.edit();
@@ -112,7 +164,7 @@ public class SmartControl extends Activity {
 
              } else if (t1.isChecked() == (false)) {
 
-                 Toast.makeText(SmartControl.this, "t1 isn't Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "MobileMode toggle button is unchecked", Toast.LENGTH_SHORT).show();
                  //  editor.putString("first", "###");
 
                  SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
@@ -136,7 +188,7 @@ public class SmartControl extends Activity {
          @Override
          public void onClick(View v) {
              if (t2.isChecked() == (true)) {
-                 Toast.makeText(SmartControl.this, "t2 is Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "FlashLight toggle button is checked", Toast.LENGTH_SHORT).show();
                  //For Normal mode
                  //  am.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 
@@ -150,7 +202,7 @@ public class SmartControl extends Activity {
 
              } else if (t2.isChecked() == (false)) {
 
-                 Toast.makeText(SmartControl.this, "t2 isn't Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "FlashLight toggle button is unchecked", Toast.LENGTH_SHORT).show();
                  //  editor.putString("first", "###");
 
                  SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
@@ -168,7 +220,7 @@ public class SmartControl extends Activity {
          @Override
          public void onClick(View v) {
              if (t3.isChecked() == (true)) {
-                 Toast.makeText(SmartControl.this, "t3 is Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "WiFi toggle button is checked", Toast.LENGTH_SHORT).show();
                  //For Normal mode
                  //  am.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 
@@ -182,7 +234,7 @@ public class SmartControl extends Activity {
 
              } else if (t3.isChecked() == (false)) {
 
-                 Toast.makeText(SmartControl.this, "t3 isn't Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "FlashLight toggle button is unchecked", Toast.LENGTH_SHORT).show();
                  //  editor.putString("first", "###");
 
                  SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
@@ -200,21 +252,21 @@ public class SmartControl extends Activity {
          @Override
          public void onClick(View v) {
              if (t4.isChecked() == (true)) {
-                 Toast.makeText(SmartControl.this, "t4 is Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "Ring a phone toggle button is checked", Toast.LENGTH_SHORT).show();
                  //For Normal mode
                  //  am.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 
 
                  SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
                  SharedPreferences.Editor editor = x.edit();
-                 editor.putString("rab", "RABON");
-                 editor.putString("rab2", "RABOFF");
+                 editor.putString("rab", "RAPON");
+                 editor.putString("rab2", "RAPOFF");
                  editor.apply();
 
 
              } else if (t4.isChecked() == (false)) {
 
-                 Toast.makeText(SmartControl.this, "t4 isn't Checked", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(SmartControl.this, "Ring a phone toggle button is unchecked", Toast.LENGTH_SHORT).show();
                  //  editor.putString("first", "###");
 
                  SharedPreferences x = getSharedPreferences("sco", Context.MODE_PRIVATE);
@@ -237,4 +289,5 @@ public class SmartControl extends Activity {
     }
 
 
-}
+
+   }

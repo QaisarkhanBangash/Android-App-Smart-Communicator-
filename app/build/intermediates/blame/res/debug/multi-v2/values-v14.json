@@ -1,29 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\res\\merged\\debug\\values-v14\\values-v14.xml",
+            "outputFile": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "source": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "from": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "220",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "363"
+                        "startLines": "7,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "220,771",
+                        "endLines": "15,21",
+                        "endColumns": "12,12",
+                        "endOffsets": "766,1088"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "198"
+                        "startLines": "3,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "101,928",
+                        "endLines": "11,22",
+                        "endColumns": "12,12",
+                        "endOffsets": "647,1245"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d736a1f0bb86dd94e2be2f68d5c2b77\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\Aweso\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2d05d36a5ced140307c539266397c8b0\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15",
                         "startColumns": "4,4,4,4,4",
@@ -33,55 +33,29 @@
                         "endOffsets": "326,397,480,890,1312"
                     },
                     "to": {
-                        "startLines": "5,10,11,12,18",
+                        "startLines": "12,23,24,25,31",
                         "startColumns": "4,4,4,4,4",
-                        "startOffsets": "203,479,550,633,1043",
-                        "endLines": "9,10,11,17,23",
+                        "startOffsets": "652,1250,1321,1404,1814",
+                        "endLines": "16,23,24,30,36",
                         "endColumns": "12,70,82,12,12",
-                        "endOffsets": "474,545,628,1038,1460"
+                        "endOffsets": "923,1316,1399,1809,2231"
                     }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
-            "map": [
+                },
                 {
-                    "source": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "source": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\src\\main\\res\\values-v14\\ids.xml",
                     "from": {
-                        "startLines": "7",
+                        "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "220",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "363"
+                        "startOffsets": "57",
+                        "endColumns": "46",
+                        "endOffsets": "99"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "198"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d736a1f0bb86dd94e2be2f68d5c2b77\\res\\values-v14\\values-v14.xml",
-                    "from": {
-                        "startLines": "2,7,8,9,15",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,331,402,485,895",
-                        "endLines": "6,7,8,14,20",
-                        "endColumns": "12,70,82,12,12",
-                        "endOffsets": "326,397,480,890,1312"
-                    },
-                    "to": {
-                        "startLines": "5,10,11,12,18",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "203,479,550,633,1043",
-                        "endLines": "9,10,11,17,23",
-                        "endColumns": "12,70,82,12,12",
-                        "endOffsets": "474,545,628,1038,1460"
+                        "endColumns": "45",
+                        "endOffsets": "96"
                     }
                 }
             ]

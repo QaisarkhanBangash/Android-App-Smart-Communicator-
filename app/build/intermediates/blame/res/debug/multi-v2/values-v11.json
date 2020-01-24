@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d736a1f0bb86dd94e2be2f68d5c2b77\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "7,20,12",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "223,910,455",
+                        "endLines": "10,22,18",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "447,1063,902"
+                    },
+                    "to": {
+                        "startLines": "3,85,88",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "101,5911,6067",
+                        "endLines": "6,87,94",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "322,6062,6508"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Aweso\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2d05d36a5ced140307c539266397c8b0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,74 +33,29 @@
                         "endOffsets": "469,894,1322,1748,2175,2600,2689,2935,3184,3285,3537,3792,3895,4148,4556,4976,5398,5505,5634,5705,5788,9813,13981,14072"
                     },
                     "to": {
-                        "startLines": "5,11,17,23,29,35,41,42,46,50,51,55,59,60,64,69,74,79,81,93,94,95,149,204",
+                        "startLines": "7,13,19,25,31,37,43,44,48,52,53,57,61,62,66,71,76,81,83,95,96,97,151,206",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "189,608,1033,1461,1887,2314,2739,2828,3074,3323,3424,3676,3931,4034,4287,4695,5115,5537,5644,6383,6454,6537,10562,14730",
-                        "endLines": "10,16,22,28,34,40,41,45,49,50,54,58,59,63,68,73,78,80,82,93,94,148,203,204",
+                        "startOffsets": "327,746,1171,1599,2025,2452,2877,2966,3212,3461,3562,3814,4069,4172,4425,4833,5253,5675,5782,6513,6584,6667,10692,14860",
+                        "endLines": "12,18,24,30,36,42,43,47,51,52,56,60,61,65,70,75,80,82,84,95,96,150,205,206",
                         "endColumns": "12,12,12,12,12,12,88,12,12,100,12,12,102,12,12,12,12,12,12,70,82,12,12,90",
-                        "endOffsets": "603,1028,1456,1882,2309,2734,2823,3069,3318,3419,3671,3926,4029,4282,4690,5110,5532,5639,5768,6449,6532,10557,14725,14816"
+                        "endOffsets": "741,1166,1594,2020,2447,2872,2961,3207,3456,3557,3809,4064,4167,4420,4828,5248,5670,5777,5906,6579,6662,10687,14855,14946"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "source": "C:\\Users\\Aweso\\Desktop\\SmartComm\\app\\src\\main\\res\\values-v11\\ids.xml",
                     "from": {
-                        "startLines": "7,19,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "221,815,360",
-                        "endLines": "9,21,17",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "352,976,807"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "46",
+                        "endOffsets": "99"
                     },
                     "to": {
-                        "startLines": "2,83,86",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,5773,5937",
-                        "endLines": "4,85,92",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "184,5932,6378"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Qaisar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d736a1f0bb86dd94e2be2f68d5c2b77\\res\\values-v11\\values-v11.xml",
-                    "from": {
-                        "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,474,899,1327,1753,2180,2605,2694,2940,3189,3290,3542,3797,3900,4153,4561,4981,5403,5510,5639,5710,5793,9818,13986",
-                        "endLines": "7,13,19,25,31,37,38,42,46,47,51,55,56,60,65,70,75,77,79,80,81,135,190,191",
-                        "endColumns": "12,12,12,12,12,12,88,12,12,100,12,12,102,12,12,12,12,12,12,70,82,12,12,90",
-                        "endOffsets": "469,894,1322,1748,2175,2600,2689,2935,3184,3285,3537,3792,3895,4148,4556,4976,5398,5505,5634,5705,5788,9813,13981,14072"
-                    },
-                    "to": {
-                        "startLines": "5,11,17,23,29,35,41,42,46,50,51,55,59,60,64,69,74,79,81,93,94,95,149,204",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "189,608,1033,1461,1887,2314,2739,2828,3074,3323,3424,3676,3931,4034,4287,4695,5115,5537,5644,6383,6454,6537,10562,14730",
-                        "endLines": "10,16,22,28,34,40,41,45,49,50,54,58,59,63,68,73,78,80,82,93,94,148,203,204",
-                        "endColumns": "12,12,12,12,12,12,88,12,12,100,12,12,102,12,12,12,12,12,12,70,82,12,12,90",
-                        "endOffsets": "603,1028,1456,1882,2309,2734,2823,3069,3318,3419,3671,3926,4029,4282,4690,5110,5532,5639,5768,6449,6532,10557,14725,14816"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Qaisar\\Desktop\\WonderCom-master1 - Copy\\app\\src\\main\\res\\values-v11\\styles.xml",
-                    "from": {
-                        "startLines": "7,19,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "221,815,360",
-                        "endLines": "9,21,17",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "352,976,807"
-                    },
-                    "to": {
-                        "startLines": "2,83,86",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,5773,5937",
-                        "endLines": "4,85,92",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "184,5932,6378"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
                     }
                 }
             ]

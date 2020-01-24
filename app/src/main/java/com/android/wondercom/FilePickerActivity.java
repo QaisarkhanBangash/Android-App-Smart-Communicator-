@@ -33,6 +33,11 @@ public class FilePickerActivity extends ListActivity{
 		currentDir = Environment.getExternalStorageDirectory();
 		rootDirPath = currentDir.getName();
 		fillDirectory(currentDir);
+
+		getActionBar().setTitle("   File Picker");
+		getActionBar().setHomeAsUpIndicator(R.drawable.back);
+		getActionBar().setHomeButtonEnabled(true);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 	
 	public void fillDirectory(File file){

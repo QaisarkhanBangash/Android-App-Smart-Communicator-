@@ -78,6 +78,10 @@ public class RecordAudioActivity extends Activity {
 				finish();
 			}
 		});
+		getActionBar().setTitle("   Record Audio");
+		getActionBar().setHomeAsUpIndicator(R.drawable.back);
+		getActionBar().setHomeButtonEnabled(true);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 	
 	@Override

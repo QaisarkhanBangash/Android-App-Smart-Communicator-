@@ -123,6 +123,10 @@ public class ChatActivity extends Activity {
         
         //Register the context menu to the list view (for pop up menu)
         registerForContextMenu(listView);
+
+		getActionBar().setTitle("   Chat Activity");
+		getActionBar().setHomeAsUpIndicator(R.drawable.back);
+		getActionBar().setHomeButtonEnabled(true);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
@@ -219,8 +223,9 @@ public class ChatActivity extends Activity {
 			case TAKE_PHOTO:
 				if (resultCode == RESULT_OK && data.getData() != null) {
 					fileUri = data.getData();
-					sendMessage(Message.IMAGE_MESSAGE);
 					tmpFilesUri.add(fileUri);
+					fileURL = MediaFile.getRealPathFromURI(this, fileUri);
+					sendMessage(Message.IMAGE_MESSAGE);
 				}
 				break;
 			case RECORD_AUDIO:
@@ -263,7 +268,8 @@ public class ChatActivity extends Activity {
 				Log.v(TAG, "Bitmap from url ok");
 				mes.setByteArray(image.bitmapToByteArray(image.getBitmapFromUri()));				
 				mes.setFileName(image.getFileName());
-				mes.setFileSize(image.getFileSize());				
+				mes.setFileSize(image.getFileSize());
+				tmpFilesUri.add(fileUri);
 				Log.v(TAG, "Set byte array to image ok");
 				break;
 			case Message.AUDIO_MESSAGE:
@@ -341,7 +347,17 @@ public class ChatActivity extends Activity {
         int idItem = item.getItemId();
         switch(idItem){
 	        case R.id.send_image:
-	        	showPopup(edit);
+	        	//showPopup(edit);
+				Log.v(TAG, "Pick an image");
+				Intent intent = new Intent(Intent.ACTION_PICK);
+				intent.setType("image/*");
+				intent.setAction(Intent.ACTION_GET_CONTENT);
+
+				// Prevent crash if no app can handle the intent
+				if (intent.resolveActivity(getPackageManager()) != null) {
+					startActivityForResult(intent, PICK_IMAGE);
+				}
+				
 	        	return true;
 
 	        case R.id.send_audio:

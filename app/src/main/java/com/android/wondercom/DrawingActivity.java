@@ -83,6 +83,11 @@ public class DrawingActivity extends Activity {
 				saveDrawing();
 			}
 		});
+
+		getActionBar().setTitle("   Drawing");
+		getActionBar().setHomeAsUpIndicator(R.drawable.back);
+		getActionBar().setHomeButtonEnabled(true);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 	
 	public void paintClicked(View view){

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wondercom"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.sample"
+    android:versionCode="190010203"
+    android:versionName="1.2.3-SNAPSHOT" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="19"
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -26,12 +26,15 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission
         android:name="android.permission.CAMERA"
         android:required="true" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
@@ -51,7 +54,7 @@
     <application
         android:allowBackup="true"
         android:debuggable="true"
-        android:icon="@drawable/lgo"
+        android:icon="@drawable/x"
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme" >
         <service
@@ -60,16 +63,17 @@
 
         <activity
             android:name="com.android.wondercom.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:parentActivityName="com.android.wondercom.Main2Activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.android.wondercom.Main2Activity" />
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value="com.android.wondercom.Main2Activity" /> -->
         </activity>
         <activity
             android:name="com.android.wondercom.ChatActivity"
@@ -85,7 +89,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_view_image"
             android:parentActivityName="com.android.wondercom.ChatActivity"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/CustomActionBarTheme" />
         <activity
             android:name="com.android.wondercom.RecordAudioActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -118,9 +122,15 @@
             android:name="com.android.wondercom.DrawingActivity"
             android:label="@string/title_activity_drawing" />
         <activity android:name="com.android.wondercom.Main2Activity" />
-        <activity android:name="com.android.wondercom.SmartControl" />
-        <activity android:name="com.android.wondercom.About" />
-        <activity android:name="com.android.wondercom.SmartAccess" />
+        <activity
+            android:name="com.android.wondercom.SmartControl"
+            android:parentActivityName="com.android.wondercom.SCO" />
+        <activity
+            android:name="com.android.wondercom.Settings"
+            android:parentActivityName="com.android.wondercom.Main2Activity" />
+        <activity
+            android:name="com.android.wondercom.SmartAccess"
+            android:parentActivityName="com.android.wondercom.ACO" />
 
         <service
             android:name="com.android.wondercom.MobileMode"
@@ -155,6 +165,16 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+
+        <!-- <receiver -->
+        <!-- android:name=".Receivers.MessageReceiver1" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.provider.Telephony.SMS_RECEIVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
         <receiver
             android:name="com.android.wondercom.SmsSentReceiver"
             android:enabled="true"
@@ -163,6 +183,17 @@
             android:name="com.android.wondercom.SmsDeliveredReceiver"
             android:enabled="true"
             android:exported="true" />
+        <receiver
+            android:name="com.android.wondercom.Receivers.SimChangedReceiver"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <service
             android:name="com.android.wondercom.FlashlighIS"
@@ -205,6 +236,100 @@
         <service
             android:name="com.android.wondercom.RABOFF"
             android:exported="false" />
+
+        <activity
+            android:name="com.android.wondercom.Info_About"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.Info_Help"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.SCO"
+            android:parentActivityName="com.android.wondercom.Main2Activity" />
+        <activity
+            android:name="com.android.wondercom.ACO"
+            android:parentActivityName="com.android.wondercom.Main2Activity" />
+        <activity
+            android:name="com.android.wondercom.SmartControlOM"
+            android:parentActivityName="com.android.wondercom.SCO" />
+        <activity
+            android:name="com.android.wondercom.SmartAccessOM"
+            android:parentActivityName="com.android.wondercom.ACO" />
+        <activity
+            android:name="com.android.wondercom.InfooS1"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.InfooS2"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.InfooS3"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.InfooS4"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.InfooS5"
+            android:parentActivityName="com.android.wondercom.Settings" />
+        <activity
+            android:name="com.android.wondercom.InfooSA1"
+            android:parentActivityName="com.android.wondercom.SmartAccess" />
+        <activity
+            android:name="com.android.wondercom.InfooSA2"
+            android:parentActivityName="com.android.wondercom.SmartAccess" />
+        <activity
+            android:name="com.android.wondercom.InfooSA3"
+            android:parentActivityName="com.android.wondercom.SmartAccess" />
+        <activity
+            android:name="com.android.wondercom.InfooSA4"
+            android:parentActivityName="com.android.wondercom.SmartAccess" />
+        <activity
+            android:name="com.android.wondercom.InfooSA5"
+            android:parentActivityName="com.android.wondercom.SmartAccess" />
+        <activity
+            android:name="com.android.wondercom.InfooSA6"
+            android:parentActivityName="com.android.wondercom.SmartAccessOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSA7"
+            android:parentActivityName="com.android.wondercom.SmartAccessOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSA8"
+            android:parentActivityName="com.android.wondercom.SmartAccessOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSA9"
+            android:parentActivityName="com.android.wondercom.SmartAccessOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSA10"
+            android:parentActivityName="com.android.wondercom.SmartAccessOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSC1"
+            android:parentActivityName="com.android.wondercom.SmartControl" />
+        <activity
+            android:name="com.android.wondercom.InfooSC2"
+            android:parentActivityName="com.android.wondercom.SmartControl" />
+        <activity
+            android:name="com.android.wondercom.InfooSC3"
+            android:parentActivityName="com.android.wondercom.SmartControl" />
+        <activity
+            android:name="com.android.wondercom.InfooSC4"
+            android:parentActivityName="com.android.wondercom.SmartControl" />
+        <activity
+            android:name="com.android.wondercom.InfooSC5"
+            android:parentActivityName="com.android.wondercom.SmartControlOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSC6"
+            android:parentActivityName="com.android.wondercom.SmartControlOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSC7"
+            android:parentActivityName="com.android.wondercom.SmartControlOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSC8"
+            android:parentActivityName="com.android.wondercom.SmartControlOM" />
+        <activity
+            android:name="com.android.wondercom.InfooSC9"
+            android:parentActivityName="com.android.wondercom.SCO" />
+        <activity
+            android:name="com.android.wondercom.InfooSC10"
+            android:parentActivityName="com.android.wondercom.SCO" />
 
         <meta-data
             android:name="android.support.VERSION"

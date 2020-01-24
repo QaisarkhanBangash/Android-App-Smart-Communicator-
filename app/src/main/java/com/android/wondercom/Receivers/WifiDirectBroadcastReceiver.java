@@ -132,7 +132,7 @@ public class WifiDirectBroadcastReceiver extends BroadcastReceiver{
 	
 	public void activateGoToChat(String role){
 		if(mActivity.getClass() == MainActivity.class){
-			((MainActivity)mActivity).getGoToChat().setText("Start the chat "+role);
+			((MainActivity)mActivity).getGoToChat().setText("Start the chat ");
 			((MainActivity)mActivity).getGoToChat().setVisibility(View.VISIBLE);
 			((MainActivity)mActivity).getSetChatName().setVisibility(View.VISIBLE);
 			((MainActivity)mActivity).getSetChatNameLabel().setVisibility(View.VISIBLE);

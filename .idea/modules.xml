@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WonderCom-master1 - Copy.iml" filepath="$PROJECT_DIR$/WonderCom-master1 - Copy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartComm.iml" filepath="$PROJECT_DIR$/SmartComm.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

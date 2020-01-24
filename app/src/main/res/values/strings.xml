@@ -2,7 +2,7 @@
 <resources>
 
     <!-- App and Activities -->
-    <string name="app_name">Smart Communicator</string>
+    <string name="app_name">SmartComm</string>
     <string name="title_activity_view_image">View image</string>
     <string name="title_activity_chat">Chatroom</string>
     <string name="title_activity_record_audio">Record audio</string>
